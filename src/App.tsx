@@ -21,7 +21,7 @@ function App() {
     }
 
     const output = handleCommand(cmd);
-    setHistory(prev => [...prev, `root@localhost$~ ${cmd}`, output]);
+    setHistory(prev => [...prev, `root$~ ${cmd}`, output]);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -69,7 +69,7 @@ function App() {
 
             {/* Input Form */}
             <form onSubmit={handleSubmit} className="flex items-center gap-2">
-              <span className="text-green-500">root@localhost$~</span>
+              <span className="text-green-500">root$~</span>
               <input
                 type="text"
                 value={input}
