@@ -6,7 +6,7 @@ function App() {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<string[]>([
     '---------- WHO AM I ---------------',
-    'Hello, I am Dewantara, a final semester student majoring in Computer Science, with experience in Full Stuck Mobile Developments and with a high learning intention.',
+    'Hello, I am Dewantara, a final semester student majoring in Computer Science, with experience in Full Stack Mobile Developments and with a high learning intention.',
     '---------------------------------',
     'Type "help" for available commands',
     'Try "open github" to visit my GitHub profile',
