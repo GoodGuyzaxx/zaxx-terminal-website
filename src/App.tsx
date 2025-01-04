@@ -5,11 +5,13 @@ import { handleCommand } from './utils/handleCommand';
 function App() {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<string[]>([
+    '---------- WHO AM I ---------------',
+    'Hello, I am Dewantara, a final semester student majoring in Computer Science, with experience in Full Stuck Mobile Developments and with a high learning intention.',
+    '---------------------------------',
     'Type "help" for available commands',
     'Try "open github" to visit my GitHub profile',
     'Try "open instagram" to visit my Instagram',
     'Try "open linkedin" to visit my LinkedIn',
-    '----------------------------',
   ]);
 
   const processCommand = (cmd: string) => {
@@ -19,7 +21,7 @@ function App() {
     }
 
     const output = handleCommand(cmd);
-    setHistory(prev => [...prev, `$ ${cmd}`, output]);
+    setHistory(prev => [...prev, `root@localhost$~ ${cmd}`, output]);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -67,7 +69,7 @@ function App() {
 
             {/* Input Form */}
             <form onSubmit={handleSubmit} className="flex items-center gap-2">
-              <span className="text-green-500">$</span>
+              <span className="text-green-500">root@localhost$~</span>
               <input
                 type="text"
                 value={input}

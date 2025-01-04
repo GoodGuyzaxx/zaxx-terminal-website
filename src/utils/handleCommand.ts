@@ -17,6 +17,7 @@ export const handleCommand = (cmd: string): string => {
 
 function extractUrl(command: string): string | null {
   const socialLinks = {
+    // project: 'https://linkedin.com/in/dewantarar',
     linkedin: 'https://linkedin.com/in/dewantarar',
     github: 'https://github.com/GoodGuyzaxx',
     instagram: 'https://instagram.com/dewntraa',
